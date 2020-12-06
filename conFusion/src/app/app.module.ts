@@ -11,12 +11,16 @@ import {DishDetailsComponent} from './dish-details/dish-details.component';
 
 
 import {DishService} from './services/dish.service';
+import { HeaderComponent } from './header/header.component';
+import { FoorterComponent } from './foorter/foorter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    DishDetailsComponent
+    DishDetailsComponent,
+    HeaderComponent,
+    FoorterComponent
   ],
   imports: [
     BrowserModule,
