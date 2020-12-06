@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatListModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatGridListModule, MatListModule, MatToolbarModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import 'hammerjs';
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +19,10 @@ import { MenuComponent } from './menu/menu.component';
     MatToolbarModule,
     FlexLayoutModule,
     AppRoutingModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
