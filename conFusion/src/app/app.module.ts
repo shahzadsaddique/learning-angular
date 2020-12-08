@@ -4,15 +4,20 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCardModule, MatGridListModule, MatListModule, MatToolbarModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import 'hammerjs';
-import {AppRoutingModule} from './app-routing.module';
+
+import {AppRoutingModule} from './app-routing/app-routing.module';
+
+import {DishService} from './services/dish.service';
+
 import {AppComponent} from './app.component';
 import {MenuComponent} from './menu/menu.component';
 import {DishDetailsComponent} from './dish-details/dish-details.component';
+import {HeaderComponent} from './header/header.component';
+import {FoorterComponent} from './foorter/foorter.component';
+import {HomeComponent} from './home/home.component';
+import {AboutComponent} from './about/about.component';
+import {ContactComponent} from './contact/contact.component';
 
-
-import {DishService} from './services/dish.service';
-import { HeaderComponent } from './header/header.component';
-import { FoorterComponent } from './foorter/foorter.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,10 @@ import { FoorterComponent } from './foorter/foorter.component';
     MenuComponent,
     DishDetailsComponent,
     HeaderComponent,
-    FoorterComponent
+    FoorterComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
